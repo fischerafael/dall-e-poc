@@ -11,6 +11,7 @@ export default async function handler(
 ) {
   try {
     const prompt = req.body.prompt;
+
     const response = await openai.images.generate({
       model: "dall-e-3",
       prompt: prompt,
